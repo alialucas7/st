@@ -38,3 +38,7 @@ sudo make clean install
  |#1a1b26| background|
  |#c0caf5| foreground|
 |#c0caf5| cursor|
+
+
+### Referencias
+https://github.com/gerardet46/st
