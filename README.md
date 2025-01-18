@@ -41,4 +41,5 @@ sudo make clean install
 
 
 ### Referencias
-See [scripts de Guerry Studios] https://github.com/gerardet46/st
+
+Ver [scripts de Gerry Studios](https://github.com/gerardet46/st)
