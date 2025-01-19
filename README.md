@@ -18,7 +18,7 @@ sudo make clean install
 mover el archivo '.bashrc' a la carpeta del usuario 
 
 ```bash
-mv .bashrc ~/
+mv -f .bashrc ~/
 ```
 ### Esquema de colores - tokyionight
 | Hexadecimal | Color | 
@@ -36,6 +36,24 @@ mv .bashrc ~/
  |#1a1b26| background|
  |#c0caf5| foreground|
 |#c0caf5| cursor|
+
+
+
+### Parches Instalados
+| suckless | 
+|-------------|
+|st-alpha-0.8.2.diff|
+|st-anysize-0.8.1.diff|
+|st-blinking_cursor-20200531-a2a7044.diff|
+st-dracula-0.8.2.diff
+st-externalpipe-0.8.4.diff
+st-externalpipe-eternal-0.8.3.diff
+st-font2-20190416-ba72400.diff
+st-newterm-0.8.2.diff
+st-nordtheme-0.8.2.diff
+st-scrollback-0.8.4.diff
+|st-xresources-20200604-9ba7ecf.diff|
+
 
 
 ### Referencias
