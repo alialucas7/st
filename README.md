@@ -37,7 +37,12 @@ mv -f .bashrc ~/
  |#c0caf5| foreground|
 |#c0caf5| cursor|
 
+### Atajos del Teclado
 
+Se pueden cambiar en `config.h`
+- Desplazamiento rapido `shift-Re/Av pàg`
+- Subir o Bajar: `alt-↑/↓`
+- Zoom: `ctrl-+/-`
 
 ### Parches Instalados
 | suckless | 
