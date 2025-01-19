@@ -18,6 +18,6 @@ export PS1="\[$(tput setaf 243)\]\u\[$(tput setaf 229)\][ \w] \[$(tput sgr0)\
 
 
 
-theme.sh tokyo-night
+#theme.sh tokyo-night
 
 
