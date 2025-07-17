@@ -199,8 +199,8 @@ static Rune stcursor = 0x2603; /* snowman (U+2603) */
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 78;
+static unsigned int rows = 22;
 
 /*
  * Default colour and shape of the mouse cursor
@@ -275,14 +275,30 @@ static char *editscreen[] = { "/bin/sh", "-c", "st-editscreen", "externalpipe", 
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
+
+/** configuracion anterior, scroll con flechas
 static MouseShortcut mshortcuts[] = {
-	/* mask                 button   function        argument       release */
+	// mask                 button   function        argument       release 
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
+**/
+
+
+
+/* configuracion new scroll con mouse   luc4s*/
+static MouseShortcut mshortcuts[] = {
+	    /* mask                 button   function        argument       release */
+	    { ShiftMask,            Button4, kscrollup,      {.i = 1},      0 },
+	    { XK_ANY_MOD,           Button4, kscrollup,      {.i = 3},      0 },
+            { ShiftMask,            Button5, kscrolldown,    {.i = 1},      0 },
+	    { XK_ANY_MOD,           Button5, kscrolldown,    {.i = 3},      0 },
+	    { XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+};
+
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
